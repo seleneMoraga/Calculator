@@ -49,7 +49,12 @@ public class CalculatorTest {
 
 	@Test
 	public void getHistoryTest() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(8);
+		calc.multiply(7);
+		calc.divide(2);
+		assertEquals("0 + 8 * 7 / 2" ,calc.getHistory());
+		
 	}
 
 }
